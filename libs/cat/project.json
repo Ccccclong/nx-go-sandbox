@@ -1,0 +1,21 @@
+{
+  "root": "libs/cat",
+  "sourceRoot": "libs/cat/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "go build -o ./bin/greeter.exe ./src",
+        "cwd": "libs/cat"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "go test ./src",
+        "cwd": "libs/cat"
+      }
+    }
+  }
+}
