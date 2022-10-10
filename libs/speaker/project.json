@@ -1,20 +1,20 @@
 {
-  "root": "libs/cat",
-  "sourceRoot": "libs/cat/src",
+  "root": "libs/speaker",
+  "sourceRoot": "libs/speaker/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "nx:run-commands",
       "options": {
         "command": "go build -o ./bin/greeter.exe ./src",
-        "cwd": "libs/cat"
+        "cwd": "libs/speaker"
       }
     },
     "test": {
       "executor": "nx:run-commands",
       "options": {
         "command": "go test ./src",
-        "cwd": "libs/cat"
+        "cwd": "libs/speaker"
       }
     }
   }
