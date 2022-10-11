@@ -1,19 +1,12 @@
 {
   "root": "libs/speaker",
-  "sourceRoot": "libs/speaker/src",
+  "sourceRoot": "libs/speaker",
   "projectType": "application",
   "targets": {
-    "build": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "go build -o ./bin/greeter.exe ./src",
-        "cwd": "libs/speaker"
-      }
-    },
     "test": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "go test ./src",
+        "command": "go test .",
         "cwd": "libs/speaker"
       }
     }

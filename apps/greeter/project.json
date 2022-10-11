@@ -1,19 +1,19 @@
 {
   "root": "apps/greeter",
-  "sourceRoot": "apps/greeter/src",
+  "sourceRoot": "apps/greeter",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "go build -o ./bin/greeter.exe ./src",
+        "command": "go build -o greeter.exe .",
         "cwd": "apps/greeter"
       }
     },
     "serve": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "go run ./src",
+        "command": "go run .",
         "cwd": "apps/greeter"
       }
     }
