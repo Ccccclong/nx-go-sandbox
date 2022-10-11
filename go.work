@@ -2,5 +2,8 @@ go 1.19
 
 use (
 	./apps/greeter
-	./libs/speaker
 )
+
+replace github.com/ccccclong/nx-go-sandbox/apps/greeter v0.0.0 => ./apps/greeter
+
+replace github.com/ccccclong/nx-go-sandbox/libs/speaker v1.0.0 => ./libs/speaker

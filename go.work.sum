@@ -1,1 +1,3 @@
 github.com/ccccclong/nx-go-sandbox/libs/speaker v0.0.0-20221011034859-f2d0c54cb14b/go.mod h1:pNLiFlE/jdNwbPwDZYnlIcABUZUNy9i1LiXdeucQNw4=
+github.com/ccccclong/nx-go-sandbox/libs/speaker v0.2.0 h1:4CLVs7EoWftNvrK66wJaJ29CjV2mKgTHPpYV+7/Tido=
+github.com/ccccclong/nx-go-sandbox/libs/speaker v0.2.0/go.mod h1:pNLiFlE/jdNwbPwDZYnlIcABUZUNy9i1LiXdeucQNw4=
