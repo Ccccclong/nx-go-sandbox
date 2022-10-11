@@ -7,7 +7,7 @@ func TestSpeak(t *testing.T) {
 	expected :=
 		" _._     _,-'\"\"`-._\n" +
 			"(,-.`._,'(       |\\`-/|\n" +
-			"    `-.-' \\ )-`( , o o)     Hello World\n" +
+			"    `-.-' \\ )-`( , o o)     ---->   Hello World\n" +
 			"          `-    \\`_`\"'-"
 	if result != expected {
 		t.Errorf("Result: \n%s\n\n Expected: \n%s\n\n", result, expected)
