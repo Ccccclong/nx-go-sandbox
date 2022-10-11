@@ -6,15 +6,18 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strings"
 )
 
-func Speak(message string) string {
+func Speak(message string, times int) string {
 	dirname := getDirname()
-	content, err := os.ReadFile(dirname + "/cat.txt")
+	fileContent, err := os.ReadFile(dirname + "/cat.txt")
 	if err != nil {
 		panic(err)
 	}
-	return fmt.Sprintf(string(content), message)
+	image := fmt.Sprintf(string(fileContent), message) + "\n"
+	images := strings.Repeat(image, times)
+	return images
 }
 
 func getDirname() string {

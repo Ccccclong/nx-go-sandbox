@@ -12,5 +12,5 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Hello! Whats your name?")
 	name, _ := reader.ReadString('\n')
-	fmt.Print(cat.Speak("Nice to meet you " + name))
+	fmt.Print(cat.Speak("Nice to meet you "+name, 1))
 }
